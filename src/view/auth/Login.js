@@ -34,7 +34,7 @@ const Example = () => {
                     })
                 });
                 const data = await res.json();
-                console.log(data)
+                
                 if (data.errors) {
                     Object.entries(data.errors).forEach(([key, value]) => {
                         toast.show({ 'description': value.toString() })

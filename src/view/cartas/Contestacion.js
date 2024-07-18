@@ -33,7 +33,7 @@ export default function Contestacion({ navigation, route }) {
     const descargarCarta = () => {
         
         const fileUrl = archivo;
-        const destPath = RNFetchBlob.fs.dirs.DownloadDir + '/' + tipo_carta_nombre+"-"+id+'.pdf'; // Asegúrate de incluir '/' entre DownloadDir y el nombre del archivo
+        const destPath = RNFetchBlob.fs.dirs.DownloadDir + '/cartas-cactu/'+id+".pdf"; // Asegúrate de incluir '/' entre DownloadDir y el nombre del archivo
     
         RNFetchBlob.config({
           fileCache: true,

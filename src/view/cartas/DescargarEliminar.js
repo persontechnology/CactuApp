@@ -30,21 +30,23 @@ export default function DescargarEliminar({ navigation, route }) {
     );
   }
 
+  
   // Función para descargar el archivo
   const descargarCarta = () => {
     setcargandoD(true);
     const fileUrl = carta;
-    const destPath = RNFetchBlob.fs.dirs.DownloadDir + '/' + carta_nombre; // Asegúrate de incluir '/' entre DownloadDir y el nombre del archivo
-
+    const destPath = RNFetchBlob.fs.dirs.DownloadDir + '/cartas-cactu/'+id+".pdf";
     RNFetchBlob.config({
       fileCache: true,
       path: destPath,
+      
+      
     })
       .fetch('GET', fileUrl)
       .then((res) => {
         // console.log('Archivo descargado:', res.path());
         seturlCarta(res.path());
-        console.log(res.path())
+        
 
       })
       .catch((error) => {
@@ -127,7 +129,7 @@ export default function DescargarEliminar({ navigation, route }) {
             <Pdf
               source={{ uri: urlCarta }}
               onLoadComplete={(numberOfPages, filePath) => {
-                // console.log(`Number of pages: ${numberOfPages}`);
+                // alert(filePath)
               }}
               onPageChanged={(page, numberOfPages) => {
                 // console.log(`Current page: ${page}`);

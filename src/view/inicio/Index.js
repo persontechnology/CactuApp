@@ -27,7 +27,7 @@ export default function Index({ navigation, route }) {
                 })
             });
             const result = await res.json();
-            console.log(result)
+            // console.log(result)
             if (result.data) {
                 setdata(result.data)
 

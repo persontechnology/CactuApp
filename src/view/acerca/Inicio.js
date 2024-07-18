@@ -33,8 +33,8 @@ const Example = () => {
                     <HStack alignItems="center">
                         <Box alignItems="center">
                             <Text >Diseño y Desarrollo por:</Text>
-                            <Link href="https://persontechnology.com">
-                                www.persontechnology.com
+                            <Link href="https://persontechnologys.com">
+                                www.persontechnologys.com
                             </Link>
                         </Box>
                     </HStack>
