@@ -68,7 +68,7 @@ export default function Index({ navigation, route }) {
                                         <HStack flexShrink={1} space={1} alignItems="center" justifyContent="space-between">
                                             <HStack space={1} flexShrink={1} alignItems="center">
                                                 <Text color={"coolGray.800"}>
-                                                    Hola {userNombres}, tienes {data.length} cartas por responder.
+                                                    Hola {userNombres}.
                                                 </Text>
                                             </HStack>
                                         </HStack>
